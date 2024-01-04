@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&family=Raleway:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -25,53 +25,215 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="src/css/styles.css" />
-    <title>Document</title>
+    <title>A Beginner Front-End Developer's Journey of Code | Fateha Rsd</title>
   </head>
   <body>
+    <!-- Navigation bar section -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="src/image/Fateha_logo.png"
+            alt="logo"
+            class="navbar-logo"
+            title="navbar logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa-solid fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+            <a class="nav-link" href="#project">Project</a>
+            <!-- <a class="nav-link" href="about.html#contact">Contact Me</a> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <!-- Hero section -->
-    <div class="container-fluid p-0">
-      <div class="hero">
+    <section id="hero">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-8">
-            <h2 class="text-center mt-5">Hi, I am</h2>
-            <h1 class="text-center">Fateha Arsad</h1>
-            <h3 class="text-center mb-5">
-              Front-end Developer based in Malaysia
-            </h3>
-            <div class="contact-icon">
-              <div class="row">
-                <div class="col-sm-4 mb-3">
-                  <a
-                    href="mailto:nurulfateha.arsad@gmail.com"
-                    class="fa-solid fa-at"
-                  ></a>
-                </div>
-                <div class="col-sm-4 mb-3">
-                  <a
-                    href="https://github.com/FatehaRsd"
-                    target="_blank"
-                    class="fa-brands fa-github"
-                  ></a>
-                </div>
-                <div class="col-sm-4 mb-3">
-                  <a
-                    href="https://www.linkedin.com/in/nurulfateharsd"
-                    target="_blank"
-                    class="fa-brands fa-linkedin-in"
-                  ></a>
-                </div>
+          <div class="col-sm-8 pt-auto">
+            <h1>Nice to meet you!</h1>
+            <h1>I'm Fateha Arsad</h1>
+            <p>
+              An enthusiastic beginner front-end developer based in Malaysia,
+              eager to dive into the world of web development. Though I'm new to
+              the field, I'm a passionate learner with a strong drive to
+              constantly grow and improve my skills.
+            </p>
+            <div class="d-flex justify-content-start">
+              <div class="contact-icon">
+                <a
+                  href="mailto:nurulfateha.arsad@gmail.com"
+                  class="fa-solid fa-at"
+                ></a>
+
+                <a
+                  href="https://github.com/FatehaRsd"
+                  target="_blank"
+                  class="fa-brands fa-github"
+                ></a>
+
+                <a
+                  href="https://www.linkedin.com/in/nurulfateharsd"
+                  target="_blank"
+                  class="fa-brands fa-linkedin-in"
+                ></a>
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 p-0">
             <img
-              src="src/image/dev.jpg"
-              class="bg-img p-0"
+              src="src/image/Fateha_hero_bw-removebg.png"
+              class="img-fluid bg-img p-0 rounded"
               alt="background-image"
             />
           </div>
         </div>
+        <hr />
       </div>
-    </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project">
+      <div class="container mt-5">
+        <h1>Projects</h1>
+        <h2>Check Out Some of My Works.</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/414/original/kinabalu.PNG?1703650459"
+              alt="photo of mount kinabalu"
+              class="img-thumbnail"
+              title="photo of mount kinabalu"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-3">Mount Kinabalu Page</h2>
+            <p>
+              This was the very first coding project I created. The task was to
+              understand how coding works and build a simple landing page. This
+              page was created using basics of HTML and HTML elements, style an
+              HTML page with CSS, and create basic JavaScript functions.
+            </p>
+            <span
+              ><p>
+                This landing page was the final project after the 3-week
+                SheCodes Basic Coding Workshop
+              </p></span
+            >
+
+            <div class="button">
+              <a
+                class="btn-link"
+                href="#"
+                target=""
+                title="mount kinabalu website"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <h2 class="mb-3">Exploring Taman Negara Page</h2>
+            <p>
+              This page was build on what I've learned in SheCodes Basics and
+              dive deeper into introduction to front-end development. I've
+              learned how to build a website landing page from scratch packed
+              with cool features by adding engaging elements to my pages with
+              advanced techniques in HTML such as HTML Class Manipulation, CSS
+              such CSS Background, Transformed, Grids and JavaScript.
+            </p>
+            <span>
+              <p>
+                This landing page was the final project after the 1-week
+                SheCodes Basic Add-On Coding Workshop
+              </p>
+            </span>
+            <div class="button">
+              <a
+                class="btn-link"
+                href="https://fateharsd.github.io/Explorasi-Taman-Negara/"
+                target="_blank"
+                title="taman negara pahang website"
+                >View Project</a
+              >
+              <!-- <a
+              class="btn-link"
+              href="https://github.com/FatehaRsd/Explorasi-Taman-Negara"
+              target="_blank"
+              >View Code</a
+            > -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/415/original/tamannegara.JPG?1703650473"
+              alt="photo of taman negara pahang"
+              class="img-thumbnail"
+              title="photo of taman negara pahang"
+            />
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/416/original/weather.JPG?1703650482"
+              alt="photo of weather app"
+              class="img-thumbnail"
+              title="photo of weather app"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-3">Vanilla JS Weather App</h2>
+            <p>
+              This interactive weather app was created by delve deep into the
+              world of coding and learn advanced front-end development. I've
+              learn advanced page animation techniques with JavaScript functions
+              and learn to integrate APIs into my code to fetch real data and
+              how to use code management tools such as Git and GitHub that
+              professionals use.
+            </p>
+            <span>
+              <p>
+                This weather app was created with Vanilla JS as part of the
+                8-week SheCodes Plus Workshop.
+              </p>
+            </span>
+            <div class="button">
+              <a
+                class="btn-link"
+                href="https://vanilla-weathersearch.netlify.app/"
+                target="_blank"
+                title="weather app website"
+                >View Project</a
+              >
+              <!-- <a
+              class="btn-link"
+              href="https://github.com/FatehaRsd/WeatherSearch"
+              target="_blank"
+              >View Code</a
+            > -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
