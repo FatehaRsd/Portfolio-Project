@@ -4,33 +4,84 @@ body {
   color: #ffffff;
 }
 
-.navbar {
-  background-color: #151515;
+h1 {
+  font-size: 88px;
+  font-weight: bold;
 }
 
-.navbar-logo {
-  height: 54px;
-  width: 136px;
+h2 {
+  color: #d9d9d9;
+  font-size: 78px;
+}
+
+h3 {
+  color: #d9d9d9;
+  font-size: 24px;
+}
+
+p {
+  color: #d9d9d9;
+  font-size: 18px;
+}
+
+.navbar {
+  background-color: #151515;
+  /* background-color: #ffffff; */
+}
+
+.navbar-img {
+  height: 50px;
+  width: 50px;
+  border-color: #d9d9d9;
+  border-radius: 50px;
+}
+
+.navbar-brand {
+  color: #d9d9d9;
+  font-weight: bold;
+  padding-left: 8px;
 }
 
 .navbar-toggler {
-  color: #ffffff;
+  color: #d9d9d9;
 }
 
 #navbarNavAltMarkup a {
-  color: #ffffff;
+  color: #d9d9d9;
+}
+
+#navbarNavAltMarkup a:hover {
+  color: #8ecccc;
+  text-decoration: underline;
+}
+
+.nav-link {
+  margin-right: 20px; /* Adjust the value as needed */
+}
+
+.fa-lightbulb {
+  font-size: 18px;
+  color: #d9d9d9;
+}
+
+.fa-lightbulb:hover {
+  color: #ffc93c;
 }
 
 #hero {
-  height: 600px;
-  margin: 100px 50px auto;
+  margin: 50px 0;
 }
 
 .hero-text {
   margin-top: 165px;
 }
 
-.col-sm-4 .bg-img {
+u {
+  color: #ffffff;
+  text-decoration-color: #8ecccc;
+}
+
+.img-fluid {
   background-color: #242424;
   width: 418px;
   height: 600px;
@@ -46,24 +97,58 @@ body {
 
 .contact-icon a:hover {
   transform: scale(1.2);
+  color: #8ecccc;
   transition: all 0.3s ease-out;
 }
 
-h1 {
-  font-size: 80px;
+.stack-icon i {
+  margin: 10px;
+  color: #d9d9d9;
+  text-decoration: none;
+  text-align: center;
+  font-size: 32px;
+}
+
+.stack-icon i:hover {
+  transform: scale(1.2);
+  color: #8ecccc;
+  transition: all 0.3s ease-out;
+}
+
+#project {
+  background-color: #242424;
+}
+
+footer {
+  background-color: #151515;
+}
+
+.text-start {
+  color: #d9d9d9;
   font-weight: bold;
+  font-size: 18px;
 }
 
-h2 {
-  font-size: 40px;
-}
-
-p {
+.footer-icon a {
+  margin: 10px;
   color: #d9d9d9;
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
 }
 
-hr {
-  border: solid 1px;
-  border-radius: 4px;
+.footer-icon a:hover {
+  transform: scale(1.2);
+  color: #8ecccc;
+  transition: all 0.3s ease-out;
+}
+
+.fa-angles-up {
   color: #d9d9d9;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.fa-angles-up:hover {
+  color: #8ecccc;
 }
