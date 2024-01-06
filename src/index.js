@@ -26,3 +26,17 @@ function scrollUp() {
     800
   );
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  let accordionButtons = document.querySelectorAll(".accordion-button");
+
+  accordionButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      accordionButtons.forEach(function (btn) {
+        btn.classList.remove("active");
+      });
+
+      button.classList.add("active");
+    });
+  });
+});
