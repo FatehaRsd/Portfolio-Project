@@ -1,7 +1,15 @@
+:root {
+  --primary-color: #151515;
+  --secondary-color: #ffffff;
+  --tertiary-color: #d9d9d9;
+  --primary-color-hover: #8ecccc;
+  --secondary-color-hover: #ffc93c;
+}
+
 body {
-  background-color: #151515;
+  background-color: var(--primary-color);
   font-family: "Space Grotesk", sans-serif;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 h1 {
@@ -10,56 +18,60 @@ h1 {
 }
 
 h2 {
-  color: #d9d9d9;
+  color: var(--tertiary-color);
   font-size: 78px;
 }
 
 h3 {
-  color: #d9d9d9;
+  color: var(--tertiary-color);
   font-size: 24px;
 }
 
-h3 u {
-  color: #d9d9d9;
+h3,
+h6 u {
+  color: var(--tertiary-color);
 }
 
 h6 {
-  color: #d9d9d9;
+  color: var(--tertiary-color);
 }
 
 p {
-  color: #d9d9d9;
+  color: var(--tertiary-color);
   font-size: 18px;
 }
 
+.stack-text {
+  font-size: 12px;
+}
+
 .navbar {
-  background-color: #151515;
-  /* background-color: #ffffff; */
+  background-color: var(--primary-color);
 }
 
 .navbar-img {
   height: 50px;
   width: 50px;
-  border-color: #d9d9d9;
+  border-color: var(--tertiary-color);
   border-radius: 50px;
 }
 
 .navbar-brand {
-  color: #d9d9d9;
+  color: var(--tertiary-color);
   font-weight: bold;
   padding-left: 8px;
 }
 
 .navbar-toggler {
-  color: #d9d9d9;
+  color: var(--tertiary-color);
 }
 
 #navbarNavAltMarkup a {
-  color: #d9d9d9;
+  color: var(--tertiary-color);
 }
 
 #navbarNavAltMarkup a:hover {
-  color: #8ecccc;
+  color: var(--primary-color-hover);
   text-decoration: underline;
 }
 
@@ -69,11 +81,11 @@ p {
 
 .fa-lightbulb {
   font-size: 18px;
-  color: #d9d9d9;
+  color: var(--tertiary-color);
 }
 
 .fa-lightbulb:hover {
-  color: #ffc93c;
+  color: var(--secondary-color-hover);
 }
 
 #hero {
@@ -85,19 +97,13 @@ p {
 }
 
 u {
-  color: #ffffff;
-  text-decoration-color: #8ecccc;
-}
-
-.img-fluid {
-  background-color: #242424;
-  width: 418px;
-  height: 600px;
+  color: var(--secondary-color);
+  text-decoration-color: var(--primary-color-hover);
 }
 
 .contact-icon a {
   margin: 10px;
-  color: #d9d9d9;
+  color: var(--tertiary-color);
   text-decoration: none;
   text-align: center;
   font-size: 32px;
@@ -105,8 +111,16 @@ u {
 
 .contact-icon a:hover {
   transform: scale(1.2);
-  color: #8ecccc;
+  color: var(--primary-color-hover);
   transition: all 0.3s ease-out;
+}
+
+.about-text {
+  text-align: justify;
+}
+
+.job-text {
+  text-align: justify;
 }
 
 .accordion {
@@ -116,20 +130,20 @@ u {
 
 .accordion-button {
   background-color: transparent !important;
-  color: #d9d9d9;
+  color: var(--tertiary-color);
 }
 
 .accordion-button.active {
-  color: #d9d9d9 !important;
+  color: var(--tertiary-color) !important;
 }
 
 .accordion-item {
   background-color: #151515;
-  color: #d9d9d9;
+  color: var(--tertiary-color);
 }
 .stack-icon i {
   margin: 10px;
-  color: #d9d9d9;
+  color: var(--tertiary-color);
   text-decoration: none;
   text-align: center;
   font-size: 32px;
@@ -137,27 +151,23 @@ u {
 
 .stack-icon i:hover {
   transform: scale(1.2);
-  color: #8ecccc;
+  color: var(--primary-color-hover);
   transition: all 0.3s ease-out;
 }
 
-#project {
-  background-color: #242424;
-}
-
 footer {
-  background-color: #151515;
+  background-color: var(--primary-color);
 }
 
 .text-start {
-  color: #d9d9d9;
+  color: var(--tertiary-color);
   font-weight: bold;
   font-size: 18px;
 }
 
 .footer-icon a {
   margin: 10px;
-  color: #d9d9d9;
+  color: var(--tertiary-color);
   text-decoration: none;
   text-align: center;
   font-size: 24px;
@@ -165,16 +175,16 @@ footer {
 
 .footer-icon a:hover {
   transform: scale(1.2);
-  color: #8ecccc;
+  color: var(--primary-color-hover);
   transition: all 0.3s ease-out;
 }
 
 .fa-angles-up {
-  color: #d9d9d9;
+  color: var(--tertiary-color);
   font-size: 28px;
   cursor: pointer;
 }
 
 .fa-angles-up:hover {
-  color: #8ecccc;
+  color: var(--primary-color-hover);
 }
