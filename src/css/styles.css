@@ -189,6 +189,16 @@ u {
   object-fit: cover;
 }
 
+.link-description {
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+
+.link-description:hover {
+  color: var(--primary-color-hover);
+  text-decoration: underline;
+}
+
 .text-card-footer {
   color: var(--tertiary-color);
 }
