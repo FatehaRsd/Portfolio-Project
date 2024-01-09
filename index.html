@@ -30,7 +30,7 @@
   </head>
   <body>
     <!-- Navigation bar section -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <img
           src="src/image/Fateha_hero_bw-removebg.png"
@@ -54,9 +54,7 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <!-- <a class="nav-link active" aria-current="page" href="index.html"
-              >Home</a
-            > -->
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
             <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#project">Project</a>
             <a class="nav-link" href="#contact">Contact</a>
@@ -70,7 +68,7 @@
 
     <!-- Hero section -->
     <section id="hero">
-      <div class="container">
+      <div class="container pt-3">
         <h1>Nice to meet you!</h1>
         <h1>
           I'm
@@ -100,6 +98,13 @@
             ></a>
           </div>
         </div>
+
+        <a
+          class="btn btn-resume mt-3"
+          href="src/doc/myResume_Fateha.pdf"
+          download="FatehaRsd_Resume.pdf"
+          ><i class="fa-solid fa-download"></i> myResume</a
+        >
       </div>
     </section>
 
@@ -113,36 +118,46 @@
             <h3>A Return to Code: Combining Experience with Renewed Zeal</h3>
             <div class="row">
               <div class="col-sm-10">
-                <p class="about-text">
-                  My love for learning sparked my coding journey during my
-                  undergraduate years. I spent four years learning Java and
-                  building a strong foundation before entering the workforce. My
-                  internship was a launchpad for my coding journey, with PHP as
-                  my first fuel. I kept exploring and learning, and even landed
-                  a software tester role before graduation! It was a great way
-                  to showcase my skills before hitting the ground running. After
-                  graduation, I transitioned to mobile networking and
-                  construction of telecommunication structure. While I learned
-                  valuable project management and problem-solving skills in this
-                  complex field, the pull of code never faded. I craved the
-                  creative freedom and seeing my code make a real difference in
-                  the world. <br />
-                  <br />Through introspection, I realized my diverse skills and
-                  desire to contribute to society could make a bigger
-                  difference. This is not just a return to coding; it's a
-                  rekindled passion, a reunion of skills and purpose. I'm eager
-                  to find a path where my technical expertise can fuel
-                  meaningful projects, drive positive change, and make a real
-                  impact. A passionate learner with diverse technical expertise
-                  and a relentless drive to grow, I'm ready for a vibrant
-                  journey fueled by code and purpose. I invite you to explore my
-                  potential and discover how my skills can contribute to your
-                  vision.
-                </p>
+                <div class="mobile-bg-image">
+                  <div class="d-sm-none ratio ratio-4x3">
+                    <img
+                      src="src/image/Fateha_work.png"
+                      class="img-fluid rounded"
+                      alt=""
+                    />
+                  </div>
+                  <p class="about-text">
+                    My love for learning sparked my coding journey during my
+                    undergraduate years. I spent four years learning Java and
+                    building a strong foundation before entering the workforce.
+                    My internship was a launchpad for my coding journey, with
+                    PHP as my first fuel. I kept exploring and learning, and
+                    even landed a software tester role before graduation! It was
+                    a great way to showcase my skills before hitting the ground
+                    running. After graduation, I transitioned to mobile
+                    networking and construction of telecommunication structure.
+                    While I learned valuable project management and
+                    problem-solving skills in this complex field, the pull of
+                    code never faded. I craved the creative freedom and seeing
+                    my code make a real difference in the world. <br />
+                    <br />Through introspection, I realized my diverse skills
+                    and desire to contribute to society could make a bigger
+                    difference. This is not just a return to coding; it's a
+                    rekindled passion, a reunion of skills and purpose. I'm
+                    eager to find a path where my technical expertise can fuel
+                    meaningful projects, drive positive change, and make a real
+                    impact. A passionate learner with diverse technical
+                    expertise and a relentless drive to grow, I'm ready for a
+                    vibrant journey fueled by code and purpose. I invite you to
+                    explore my potential and discover how my skills can
+                    contribute to your vision.
+                  </p>
+                </div>
               </div>
-              <div class="col-sm-2">
+
+              <div class="col-sm-2 d-none d-sm-block">
                 <img
-                  src="src/image/Fateha_work2.png"
+                  src="src/image/Fateha_work.png"
                   class="img-fluid rounded"
                   alt=""
                 />
@@ -395,113 +410,145 @@
           <h2>Projects</h2>
           <h3>Check Out Some of My Works.</h3>
 
-          <div class="row">
-            <div class="col-md-6">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/414/original/kinabalu.PNG?1703650459"
-                alt="photo of mount kinabalu"
-                class="img-thumbnail"
-                title="photo of mount kinabalu"
-              />
-            </div>
-            <div class="col-md-6">
-              <h2 class="mb-3">Mount Kinabalu Page</h2>
-              <p>
-                This was the very first coding project I created. The task was
-                to understand how coding works and build a simple landing page.
-                This page was created using basics of HTML and HTML elements,
-                style an HTML page with CSS, and create basic JavaScript
-                functions.
-              </p>
-              <span
-                ><p>
-                  This landing page was the final project after the 3-week
-                  SheCodes Basic Coding Workshop
-                </p></span
-              >
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 custom-card">
+                <div class="ratio ratio-1x1">
+                  <img
+                    src="src/image/kinabalu.PNG"
+                    class="card-img-top p-1 mb-1"
+                    alt="..."
+                  />
+                </div>
 
-              <div class="button">
-                <a
-                  class="btn-link"
-                  href="#"
-                  target=""
-                  title="mount kinabalu website"
-                  >View Project</a
-                >
+                <div class="card-body">
+                  <h4 class="card-title">mount kinabalu landing page</h4>
+                  <p class="card-text text-center">
+                    After 3 weeks of learning code at SheCodes, I built my first
+                    ever landing page! Using basic HTML, CSS, and JavaScript, I
+                    created a simple but awesome webpage. It was a great way to
+                    see how coding works and put my new skills into practice.
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card-footer">
+                      <small class="text-card-footer"></small>
+                      <a
+                        class="btn btn-view mt-3"
+                        href="https://github.com/FatehaRsd/final-project-1"
+                        target="_blank"
+                        ><i class="fa-solid fa-eye"></i> View Code</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card-footer">
+                      <small class="text-card-footer"></small>
+                      <a
+                        class="btn btn-view mt-3"
+                        href="https://startling-haupia-cd6ead.netlify.app/"
+                        target="_blank"
+                        ><i class="fa-solid fa-eye"></i> View Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="col">
+              <div class="card h-100 custom-card">
+                <div class="ratio ratio-1x1">
+                  <img
+                    src="src/image/tamannegara.JPG"
+                    class="card-img-top p-1 mb-1"
+                    alt="..."
+                  />
+                </div>
 
-          <div class="row mt-5">
-            <div class="col-md-6">
-              <h2 class="mb-3">Exploring Taman Negara Page</h2>
-              <p>
-                This page was build on what I've learned in SheCodes Basics and
-                dive deeper into introduction to front-end development. I've
-                learned how to build a website landing page from scratch packed
-                with cool features by adding engaging elements to my pages with
-                advanced techniques in HTML such as HTML Class Manipulation, CSS
-                such CSS Background, Transformed, Grids and JavaScript.
-              </p>
-              <span>
-                <p>
-                  This landing page was the final project after the 1-week
-                  SheCodes Basic Add-On Coding Workshop
-                </p>
-              </span>
-              <div class="button">
-                <a
-                  class="btn-link"
-                  href="https://fateharsd.github.io/Explorasi-Taman-Negara/"
-                  target="_blank"
-                  title="taman negara pahang website"
-                  >View Project</a
-                >
+                <div class="card-body">
+                  <h4 class="card-title">
+                    Exploring Taman Negara landing page
+                  </h4>
+                  <p class="card-text text-center">
+                    My SheCodes Basics Add-On project took my website building
+                    to the next level! I used advanced HTML tricks and cool CSS
+                    techniques like backgrounds, grids, and transformations to
+                    create a feature-packed landing page with engaging elements.
+                    It was a fun week learning how to code websites like a pro!
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card-footer">
+                      <small class="text-card-footer"></small>
+                      <a
+                        class="btn btn-view mt-3"
+                        href="https://github.com/FatehaRsd/Explorasi-Taman-Negara"
+                        target="_blank"
+                        ><i class="fa-solid fa-eye"></i> View Code</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card-footer">
+                      <small class="text-card-footer"></small>
+                      <a
+                        class="btn btn-view mt-3"
+                        href="https://fateharsd.github.io/Explorasi-Taman-Negara/"
+                        target="_blank"
+                        ><i class="fa-solid fa-eye"></i> View Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/415/original/tamannegara.JPG?1703650473"
-                alt="photo of taman negara pahang"
-                class="img-thumbnail"
-                title="photo of taman negara pahang"
-              />
-            </div>
-          </div>
+            <div class="col">
+              <div class="card h-100 custom-card">
+                <div class="ratio ratio-1x1">
+                  <img
+                    src="src/image/weather.JPG"
+                    class="card-img-top p-1 mb-1"
+                    alt="..."
+                  />
+                </div>
 
-          <div class="row mt-5">
-            <div class="col-md-6">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/416/original/weather.JPG?1703650482"
-                alt="photo of weather app"
-                class="img-thumbnail"
-                title="photo of weather app"
-              />
-            </div>
-            <div class="col-md-6">
-              <h2 class="mb-3">Vanilla JS Weather App</h2>
-              <p>
-                This interactive weather app was created by delve deep into the
-                world of coding and learn advanced front-end development. I've
-                learn advanced page animation techniques with JavaScript
-                functions and learn to integrate APIs into my code to fetch real
-                data and how to use code management tools such as Git and GitHub
-                that professionals use.
-              </p>
-              <span>
-                <p>
-                  This weather app was created with Vanilla JS as part of the
-                  8-week SheCodes Plus Workshop.
-                </p>
-              </span>
-              <div class="button">
-                <a
-                  class="btn-link"
-                  href="https://vanilla-weathersearch.netlify.app/"
-                  target="_blank"
-                  title="weather app website"
-                  >View Project</a
-                >
+                <div class="card-body">
+                  <h4 class="card-title">Vanilla JS Weather App</h4>
+                  <p class="card-text text-center">
+                    My SheCodes Plus project was all about building a cool
+                    interactive weather app built with pure Vanilla JS! I
+                    learned advanced animation with JavaScript, used real data
+                    from APIs, and even started using pro tools like Git and
+                    GitHub. It showed me the power of code and how to build
+                    real-world projects.
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card-footer">
+                      <small class="text-card-footer"></small>
+                      <a
+                        class="btn btn-view mt-3"
+                        href="https://github.com/FatehaRsd/WeatherSearch"
+                        target="_blank"
+                        ><i class="fa-solid fa-eye"></i> View Code</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card-footer">
+                      <small class="text-card-footer"></small>
+                      <a
+                        class="btn btn-view mt-3"
+                        href=" https://vanilla-weathersearch.netlify.app/"
+                        target="_blank"
+                        ><i class="fa-solid fa-eye"></i> View Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -545,7 +592,18 @@
         <div class="container p-3">
           <div class="text-center" onclick="scrollUp()">
             <i class="fa-solid fa-angles-up"></i>
-            <h6>BACK TO TOP</h6>
+            <p>BACK TO TOP</p>
+          </div>
+
+          <div class="text-center">
+            <p class="source-icon">
+              &copy; 2024 . Made by FatehaRsd . Open Source
+              <a
+                href="https://github.com/FatehaRsd/Portfolio-Project"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </p>
           </div>
         </div>
       </footer>
