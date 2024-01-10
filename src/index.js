@@ -18,6 +18,13 @@ $(document).ready(function () {
   });
 });
 
+function closeNavbar() {
+  let navbarCollapse = document.getElementById("navbarNavAltMarkup");
+  if (navbarCollapse.classList.contains("show")) {
+    navbarCollapse.classList.remove("show");
+  }
+}
+
 function scrollUp() {
   $("html, body").animate(
     {

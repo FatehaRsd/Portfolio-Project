@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fresh code, fresh start! Explore my growing portfolio as a passionate beginner front-end developer.  From responsive layouts to interactive elements, see how I'm bringing websites to life Let's collaborate on your next project."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,29 +19,31 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/f96b9ceb2c.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link rel="stylesheet" href="src/css/styles.css" />
-    <title>A Beginner Front-End Developer's Journey of Code | Fateha Rsd</title>
+    <title>
+      Front-End Developer | Fateha's decision to embark on a coding adventure is
+      exciting!
+    </title>
+    d
   </head>
+
   <body>
     <!-- Navigation bar section -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <img
           src="src/image/Fateha_hero_bw-removebg.png"
-          alt=""
+          alt="logo"
           class="border border-2 navbar-img"
+          title="logo"
         />
-        <a class="navbar-brand text-light" href="#">FatehaRsd</a>
+        <a
+          class="navbar-brand text-light"
+          href="#"
+          title="Nurul Fateha Binti Arsad"
+          >FatehaRsd</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -54,14 +60,43 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#project">Project</a>
-            <a class="nav-link" href="#contact">Contact</a>
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="index.html"
+              onclick="closeNavbar()"
+              title="Homepage"
+              >Home</a
+            >
+            <a
+              class="nav-link"
+              href="#about"
+              onclick="closeNavbar()"
+              title="Aboutpage"
+              >About</a
+            >
+            <a
+              class="nav-link"
+              href="#project"
+              onclick="closeNavbar()"
+              title="Projectpage"
+              >Project</a
+            >
+            <a
+              class="nav-link"
+              href="#contact"
+              onclick="closeNavbar()"
+              title="Contactpage"
+              >Contact</a
+            >
           </div>
-          <div class="navbar-nav">
-            <i class="fa-solid fa-lightbulb"></i>
-          </div>
+          <!-- <div class="navbar-nav"> -->
+          <!-- <i
+            class="fa-solid fa-lightbulb"
+            id="change-mode"
+            onclick="toggleTheme()"
+          ></i> -->
+          <!-- </div> -->
         </div>
       </div>
     </nav>
@@ -83,18 +118,21 @@
             <a
               href="mailto:nurulfateha.arsad@gmail.com"
               class="fa-solid fa-at"
+              title="link to email"
             ></a>
 
             <a
               href="https://github.com/FatehaRsd"
               target="_blank"
               class="fa-brands fa-github"
+              title="link to github profile"
             ></a>
 
             <a
               href="https://www.linkedin.com/in/nurulfateharsd"
               target="_blank"
               class="fa-brands fa-linkedin-in"
+              title="link to linkedin profile"
             ></a>
           </div>
         </div>
@@ -103,6 +141,7 @@
           class="btn btn-resume mt-3"
           href="src/doc/myResume_Fateha.pdf"
           download="FatehaRsd_Resume.pdf"
+          title="download resume"
           ><i class="fa-solid fa-download"></i> myResume</a
         >
       </div>
@@ -123,7 +162,8 @@
                     <img
                       src="src/image/Fateha_work.png"
                       class="img-fluid rounded"
-                      alt=""
+                      alt="photo at work"
+                      title="3 legged tower"
                     />
                   </div>
                   <p class="about-text">
@@ -159,7 +199,8 @@
                 <img
                   src="src/image/Fateha_work.png"
                   class="img-fluid rounded"
-                  alt=""
+                  alt="photo at work"
+                  title="3 legged tower"
                 />
               </div>
             </div>
@@ -376,23 +417,23 @@
             <div class="stack-icon">
               <div class="row">
                 <div class="col-3">
-                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-html5" title="HTML5 icon"></i>
                   <p class="stack-text">HTML5</p>
                 </div>
                 <div class="col-3">
-                  <i class="fa-brands fa-css3-alt"></i>
+                  <i class="fa-brands fa-css3-alt" title="CCS icon"></i>
                   <p class="stack-text">CSS3</p>
                 </div>
                 <div class="col-3">
-                  <i class="fa-brands fa-github"></i>
+                  <i class="fa-brands fa-github" title="GitHub icon"></i>
                   <p class="stack-text">GitHub</p>
                 </div>
                 <div class="col-3">
-                  <i class="fa-brands fa-bootstrap"></i>
+                  <i class="fa-brands fa-bootstrap" title="Bootstrap icon"></i>
                   <p class="stack-text">Bootstrap</p>
                 </div>
                 <div class="col-3">
-                  <i class="fa-brands fa-js"></i>
+                  <i class="fa-brands fa-js" title="JavaScript icon"></i>
                   <p class="stack-text">JavaScript</p>
                 </div>
               </div>
@@ -404,7 +445,7 @@
 
     <!-- Project Section -->
     <section id="project">
-      <div class="container pt-3">
+      <div class="container pt-3 pb-3">
         <hr />
         <div class="text-center">
           <h2>Projects</h2>
@@ -417,7 +458,8 @@
                   <img
                     src="src/image/kinabalu.PNG"
                     class="card-img-top p-1 mb-1"
-                    alt="..."
+                    alt="photo kinabalu"
+                    title="photo mount kinabalu"
                   />
                 </div>
 
@@ -443,6 +485,14 @@
                     </p>
                   </div>
                 </div>
+                <div class="d-flex justify-content-center">
+                  <div class="build-icon">
+                    <i class="fa-brands fa-html5" title="HTML5 icon"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS icon"></i>
+                    <i class="fa-brands fa-js" title="JavaScript icon"></i>
+                  </div>
+                </div>
+
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="card-footer">
@@ -451,7 +501,9 @@
                         class="btn btn-view mt-3"
                         href="https://github.com/FatehaRsd/final-project-1"
                         target="_blank"
-                        ><i class="fa-solid fa-eye"></i> View Code</a
+                        title="link to GitHub repository"
+                        ><i class="fa-solid fa-eye" title="view icon"></i> View
+                        Code</a
                       >
                     </div>
                   </div>
@@ -462,7 +514,9 @@
                         class="btn btn-view mt-3"
                         href="https://startling-haupia-cd6ead.netlify.app/"
                         target="_blank"
-                        ><i class="fa-solid fa-eye"></i> View Project</a
+                        title="link to website"
+                        ><i class="fa-solid fa-eye" title="view icon"></i> View
+                        Project</a
                       >
                     </div>
                   </div>
@@ -475,7 +529,8 @@
                   <img
                     src="src/image/tamannegara.JPG"
                     class="card-img-top p-1 mb-1"
-                    alt="..."
+                    alt="photo taman negara pahang"
+                    title="taman negara pahang"
                   />
                 </div>
 
@@ -502,6 +557,11 @@
                     </p>
                   </div>
                 </div>
+                <div class="build-icon">
+                  <i class="fa-brands fa-html5" title="HTML5 icon"></i>
+                  <i class="fa-brands fa-css3-alt" title="CSS icon"></i>
+                  <i class="fa-brands fa-js" title="JavaScript icon"></i>
+                </div>
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="card-footer">
@@ -510,7 +570,9 @@
                         class="btn btn-view mt-3"
                         href="https://github.com/FatehaRsd/Explorasi-Taman-Negara"
                         target="_blank"
-                        ><i class="fa-solid fa-eye"></i> View Code</a
+                        title="link to GitHub repository"
+                        ><i class="fa-solid fa-eye" title="view icon"></i> View
+                        Code</a
                       >
                     </div>
                   </div>
@@ -521,7 +583,9 @@
                         class="btn btn-view mt-3"
                         href="https://fateharsd.github.io/Explorasi-Taman-Negara/"
                         target="_blank"
-                        ><i class="fa-solid fa-eye"></i> View Project</a
+                        title="link to website"
+                        ><i class="fa-solid fa-eye" title="eye icon"></i> View
+                        Project</a
                       >
                     </div>
                   </div>
@@ -534,7 +598,8 @@
                   <img
                     src="src/image/weather.JPG"
                     class="card-img-top p-1 mb-1 custom-tooltip"
-                    alt="..."
+                    alt="photo weather app"
+                    title="weather app"
                   />
                 </div>
 
@@ -561,6 +626,11 @@
                     </p>
                   </div>
                 </div>
+                <div class="build-icon">
+                  <i class="fa-brands fa-html5" title="HTML5 icon"></i>
+                  <i class="fa-brands fa-css3-alt" title="CSS icon"></i>
+                  <i class="fa-brands fa-js" title="JavaScript icon"></i>
+                </div>
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="card-footer">
@@ -569,7 +639,9 @@
                         class="btn btn-view mt-3"
                         href="https://github.com/FatehaRsd/WeatherSearch"
                         target="_blank"
-                        ><i class="fa-solid fa-eye"></i> View Code</a
+                        title="link to GitHub repository"
+                        ><i class="fa-solid fa-eye" title="view icon"></i> View
+                        Code</a
                       >
                     </div>
                   </div>
@@ -580,7 +652,9 @@
                         class="btn btn-view mt-3"
                         href=" https://vanilla-weathersearch.netlify.app/"
                         target="_blank"
-                        ><i class="fa-solid fa-eye"></i> View Project</a
+                        title="link to website"
+                        ><i class="fa-solid fa-eye" title="eye icon"></i> View
+                        Project</a
                       >
                     </div>
                   </div>
@@ -594,7 +668,7 @@
 
     <section id="contact">
       <footer class="text-center">
-        <div class="container pt-3">
+        <div class="container">
           <hr />
           <h2>Contact</h2>
           <p>I would love to hear about you. Lets's connect!</p>
@@ -603,31 +677,35 @@
               <a
                 href="mailto:nurulfateha.arsad@gmail.com"
                 class="fa-solid fa-at"
+                title="link to email"
               ></a>
 
               <a
                 href="https://github.com/FatehaRsd"
                 target="_blank"
                 class="fa-brands fa-github"
+                title="link to GitHub"
               ></a>
 
               <a
                 href="https://www.linkedin.com/in/nurulfateharsd"
                 target="_blank"
                 class="fa-brands fa-linkedin-in"
+                title="link to LinkedIn"
               ></a>
 
               <a
                 href="https://wa.me/60109404595"
                 target="_blank"
                 class="fa-brands fa-whatsapp"
+                title="link to WhatsApp"
               ></a>
             </div>
           </div>
         </div>
         <div class="container p-3">
           <div class="text-center" onclick="scrollUp()">
-            <i class="fa-solid fa-angles-up"></i>
+            <i class="fa-solid fa-angles-up" title="angle up icon"></i>
             <p>BACK TO TOP</p>
           </div>
 
@@ -637,7 +715,10 @@
               <a
                 href="https://github.com/FatehaRsd/Portfolio-Project"
                 target="_blank"
-                ><i class="fa-solid fa-up-right-from-square"></i
+                ><i
+                  class="fa-solid fa-up-right-from-square"
+                  title="link to GitHub repository"
+                ></i
               ></a>
             </p>
           </div>
@@ -645,6 +726,16 @@
       </footer>
     </section>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f96b9ceb2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="src/index.js"></script>
   </body>
 </html>

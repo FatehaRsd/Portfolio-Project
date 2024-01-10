@@ -83,14 +83,14 @@ p {
   margin-right: 20px; /* Adjust the value as needed */
 }
 
-.fa-lightbulb {
+/* .fa-lightbulb {
   font-size: 18px;
   color: var(--tertiary-color);
 }
 
 .fa-lightbulb:hover {
   color: var(--secondary-color-hover);
-}
+} */
 
 #hero {
   margin: 50px 0;
@@ -144,12 +144,12 @@ u {
 }
 
 .accordion-button {
-  background-color: transparent !important;
+  background-color: transparent;
   color: var(--tertiary-color);
 }
 
 .accordion-button.active {
-  color: var(--tertiary-color) !important;
+  color: var(--tertiary-color);
 }
 
 .accordion-item {
@@ -176,7 +176,7 @@ u {
 }
 
 .custom-card {
-  background-color: transparent !important;
+  background-color: transparent;
   border-color: var(--tertiary-color);
 }
 
@@ -197,6 +197,12 @@ u {
 .link-description:hover {
   color: var(--primary-color-hover);
   text-decoration: underline;
+}
+
+.build-icon i {
+  font-size: 24px;
+  margin: 10px;
+  color: var(--primary-color-hover);
 }
 
 .text-card-footer {
